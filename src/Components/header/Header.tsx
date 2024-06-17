@@ -6,6 +6,7 @@ import {
   faRightToBracket,
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const ArryData = [];
 export default function Header() {
@@ -21,11 +22,7 @@ export default function Header() {
         <p style={{ letterSpacing: "0.5px" }}>Shopping</p>
       </div>
       <div className="links">
-        <a
-          style={{ position: "relative" }}
-          className="cart"
-          href="./pages/cart.html"
-        >
+        <Link style={{ position: "relative" }} className="cart" href="/cart">
           <i className="fa-solid fa-cart-shopping" />
           <FontAwesomeIcon
             style={{ width: "0.8rem", marginRight: "0.3rem" }}
@@ -34,23 +31,23 @@ export default function Header() {
           />
           $0.00
           <span className="products-number">2</span>
-        </a>
-        <a className="sign-in" href="./pages/signin.html">
+        </Link>
+        <Link className="sign-in" href="/signin">
           <FontAwesomeIcon
             style={{ width: "0.8rem", marginRight: "0.3rem" }}
             className="fa-solid fa-right-to-bracket"
             icon={faRightToBracket}
           />
           Sign in
-        </a>
-        <a className="register" href="./pages/register.html">
+        </Link>
+        <Link className="register" href="/signup">
           <FontAwesomeIcon
             style={{ width: "0.8rem", marginRight: "0.3rem" }}
             className="fa-solid fa-user-plus"
             icon={faUserPlus}
           />
           Register
-        </a>
+        </Link>
       </div>
     </header>
   );

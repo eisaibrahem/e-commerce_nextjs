@@ -1,11 +1,12 @@
 footer {
+  position: relative;
   text-align: center;
   background-color: var(--footer-bg);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-
+  bottom: -30px;
   padding-block: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   color: white;
   font-size: 17px;
 

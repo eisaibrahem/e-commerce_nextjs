@@ -1,0 +1,14 @@
+.card {
+  max-width: 100%;
+  margin: auto;
+}
+
+.content {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
