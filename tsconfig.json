@@ -31,7 +31,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/product-details/[id]/loading.js",
+    "src/app/product-details/loading.js",
+    "src/app/(home)/loading.js"
   ],
   "exclude": [
     "node_modules"
