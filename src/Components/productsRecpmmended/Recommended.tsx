@@ -26,6 +26,7 @@ async function getData() {
 }
 export default async function Recommended() {
   const products: Product[] = await getData();
+
   return (
     <main>
       <h1 className="recommended">
