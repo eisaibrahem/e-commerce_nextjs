@@ -9,7 +9,16 @@ export default async function ProductDetails({
   params: { id: number };
 }) {
   return (
-    <div className="product-details">
+    <div
+      className="product-details"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        height: "100vh",
+      }}
+    >
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <ProductDetail id={params.id} />

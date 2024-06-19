@@ -1,15 +1,14 @@
 footer {
-  position: relative;
   text-align: center;
   background-color: var(--footer-bg);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  bottom: -30px;
   padding-block: 1rem;
   margin-top: 1rem;
   color: white;
   font-size: 17px;
-
+  width: 100%;
+  margin-top: 50px;
   & span {
     color: #ff7790;
     text-transform: capitalize;

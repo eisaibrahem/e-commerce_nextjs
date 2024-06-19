@@ -72,7 +72,7 @@ export default async function ProductDetail(params: { id: number }) {
             alt={product.title}
             layout="fill"
             objectFit="cover"
-            style={{ borderRadius: "8px" }}
+            style={{ borderRadius: "8px", maxWidth: "auto" }}
           />
         </div>
 

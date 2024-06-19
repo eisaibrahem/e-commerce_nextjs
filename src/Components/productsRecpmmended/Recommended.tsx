@@ -37,13 +37,9 @@ export default async function Recommended() {
         />
         Recommended for you
       </h1>
-      <section className="products flex">
+      <section className="products flex" style={{ gap: "1rem" }}>
         {products.map((product) => (
-          <article
-            key={product.id}
-            className="card"
-            style={{ height: "450px" }}
-          >
+          <article key={product.id} className="card">
             <Link href={`product-details/${product.id}`}>
               <img
                 width={266}
